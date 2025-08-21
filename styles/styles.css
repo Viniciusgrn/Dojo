@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'Orgon Plan';
+    src: local('Orgon Plan Light'), local('Orgon-Plan-Light'),
+        url('OrgonPlan-Light.woff2') format('woff2'),
+        url('OrgonPlan-Light.woff') format('woff'),
+        url('OrgonPlan-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 body{
-    background-color: rgb(224, 219, 219);
-    color: white;
-    max-width: 1200px;
+    background-image: url("../img/bit.jpg");
+    color: #000000;
     margin: 0;
     padding: 15px;
 }
@@ -11,6 +20,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 }
 
 #title{
@@ -22,8 +32,10 @@ a{
    color: black; 
 }
 
-a:hover{
-    color: white;
+.menuHeader:hover{
+    color: #000000;
+    background-color: aliceblue;
+    
     transition: 0.3s all;
 }
 
@@ -34,6 +46,7 @@ li{
 
 h1{
     font-weight: 200;
+    font-family: 'Orgon Plan';
 }
 
 main{
@@ -43,12 +56,9 @@ main{
 }
 
 h2{
+    color: black;
     font-size: 56px;
     line-height: 10px;
-}
-
-spam{
-    color:rgb(0, 0, 0);
 }
 
 p{
@@ -59,4 +69,13 @@ p{
 img{
     width: 700px;
 
+}
+
+.menuHeader, .logoHeader{
+    color: aliceblue;
+}
+
+.tituloForms{
+    color:#000000;
+    font-family: 'Orgon Plan';
 }
