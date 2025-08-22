@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url("../img/bit.jpg"); 
+    background-image: url("../img/bit6.jpg"); 
     background-repeat: no-repeat;
     background-size:contain;
     color: #000000;
@@ -51,9 +51,7 @@ h1{
 }
 
 .tituloPrincipal{
-    font-size: 70px;
-
-    
+    font-size: 70px;    
 }
 
 main{
