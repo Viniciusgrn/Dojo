@@ -9,7 +9,9 @@
 }
 
 body{
-    background-image: url("../img/bit.jpg");
+    background-image: url("../img/bit.jpg"); 
+    background-repeat: no-repeat;
+    background-size:contain;
     color: #000000;
     margin: 0;
     padding: 15px;
@@ -34,8 +36,7 @@ a{
 
 .menuHeader:hover{
     color: #000000;
-    background-color: aliceblue;
-    
+    -webkit-text-stroke: 0.5px white;
     transition: 0.3s all;
 }
 
@@ -49,9 +50,17 @@ h1{
     font-family: 'Orgon Plan';
 }
 
+.tituloPrincipal{
+    font-size: 70px;
+
+    
+}
+
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -76,6 +85,13 @@ img{
 }
 
 .tituloForms{
-    color:#000000;
+    color:#fdf6f6;
     font-family: 'Orgon Plan';
+    -webkit-text-stroke: 3px black;
+}
+
+h6{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
