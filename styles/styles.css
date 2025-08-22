@@ -8,53 +8,52 @@
     font-style: normal;
 }
 
-body{
-    background-image: url("../img/bit6.jpg"); 
-    background-repeat: no-repeat;
-    background-size:contain;
+body {
     color: #000000;
     margin: 0;
-    padding: 15px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+/* Header */
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    line-height: 1;
 }
 
-#title{
-    flex-direction: column;
-    line-height: 10px;
+
+.logoHeader{
+    font-weight: 200;
+    font-family: 'Orgon Plan';
 }
 
-a{
-   color: black; 
+.menuHeader,
+.logoHeader {
+    color: aliceblue;
+    text-decoration: none;
 }
 
-.menuHeader:hover{
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.menuHeader:hover {
     color: #000000;
     -webkit-text-stroke: 0.5px white;
     transition: 0.3s all;
 }
 
-li{
-    display: inline-block;
-    margin: 20px;
-}
 
-h1{
-    font-weight: 200;
-    font-family: 'Orgon Plan';
-}
 
-.tituloPrincipal{
-    font-size: 70px;    
-}
+/* Body */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,10 +61,86 @@ main{
     margin-top: 50px;
 }
 
-h2{
-    color: black;
-    font-size: 56px;
+/* container titulo */
+.containerTitulo{
+    width: 100%;
+    padding: 100px 50px;
+    background-image: url("../img/bit6.jpg"); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: -50px;
+}
+
+
+.tituloPrincipal {
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    font-weight: 200;
+    color: #fdf6f6 !important;
+    font-family: 'Orgon Plan';
+    -webkit-text-stroke: 3px black !important;
+
+}
+
+.subtituloPrincipal {
+    font-size: 50px;
+    color: aliceblue !important;
+    display: flex;
+    justify-content: center;
+}
+
+#title{
+    flex-direction: column;
     line-height: 10px;
+}
+
+
+/* Container Informacoes */
+
+#carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: none !important;
+}
+
+.containerInformacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.textoInformacoes{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 0 20px;
+}
+
+/* Container contato */
+
+.textoContato{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tituloContato{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: -10px;
+}
+
+.fonte{
+    font-family: 'Orgon Plan';
 }
 
 p{
@@ -73,23 +148,29 @@ p{
     max-width: 500px;
 }
 
-img{
-    width: 700px;
 
+
+
+
+hr {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-color: #030303;
+    height: 100px;
 }
 
-.menuHeader, .logoHeader{
-    color: aliceblue;
-}
+/* footer */
 
-.tituloForms{
-    color:#fdf6f6;
-    font-family: 'Orgon Plan';
-    -webkit-text-stroke: 3px black;
-}
-
-h6{
-    color: aliceblue;
+.containerFooter{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: #ece9e9;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
+
+
+

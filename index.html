@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./styles/styles.css" rel="stylesheet">
     <title>CODING DOJO</title>
 </head>
@@ -16,85 +15,101 @@
             <h1 class="logoHeader">DOJO</h1>
         </div>
         <ul>
-            <li class="menuHeader">
-                <div><a href="#"></a>Inicio</a></div>
+            <li >
+                <a href="#" class="menuHeader"> Inicio</a>
             </li>
-            <a href="#">
-                <li class="menuHeader">Sobre</li>
-            </a>
-            <a href="#">
-                <li class="menuHeader">Objetivos</li>
-            </a>
-            <a href="#">
-                <li class="menuHeader">Como Participar</li>
-            </a>
+            <li >
+                <a href="#" class="menuHeader">
+                    Sobre
+                </a>
+            </li>
+            <li>
+                <a href="#" class="menuHeader">Objetivos</a>
+            </li>
+            <li>
+                <a href="#" class="menuHeader">
+                Como Participar
+                </a>
+            </li>
+            
         </ul>
     </header>
     <main>
-        <div class="tituloPrincipal">
-            <h1 class="tituloForms">Coding Dojo</h1>
-            <h6>Participe!</h6>
+        <div class="containerTitulo">
+            <h1 class="tituloPrincipal">Coding Dojo</h1>
+            <h6 class="subtituloPrincipal">Participe!</h6>
+        </div>
+        <div class="containerInformacoes">
+            <div class="textoInformacoes">
+                <h2><strong>Sobre o <span class="fonte">Dojo</span>!</strong></h2>
+                <p>
+                    O Coding Dojo é um evento de programação colaborativa que visa promover a prática deliberada de
+                    programação, o aprendizado contínuo e a troca de conhecimentos entre os participantes.
+                    Durante o evento, os participantes se reúnem para resolver desafios de programação em um ambiente
+                    colaborativo, onde todos podem contribuir com suas habilidades e experiências.
+                </p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bit1.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bit4.png" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bit2.jpg" alt="Imagem 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
         </div>
         <div>
-            <h2>Participe do</h2>
-            <h2 class="tituloForms">Dojo!</h2>
-            <p>
-                Com o objetivo de oferecer um ambiente que possibilite a prática deliberada de programação aos
-                participantes,
-                serão oferecidas Oficinas de Coding Dojo. Nessas oficinas, serão abordadas metodologias de programação e
-                boas práticas de
-                codificação por meio da análise e soluções de desafios. Além disso, serão exercitados os valores do
-                Coding Dojo, tais como,
-                cooperação, participação, coragem, respeito e simplicidado.
-            </p>
-            <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="E-mail">
-                <input type="submit" placeholder="Enviar ">
-            </form>
-            <article>
-                <img src="img/coding.jpg" alt="dojo">
-            </article>
-        </div>
+            <img src="img/coding.jpg" alt="dojo">
+            <div class="textoContato">
+                <h2><b>Participe do <span class="fonte">Dojo</span>!</b></h2>
+                <p>
+                    Com o objetivo de oferecer um ambiente que possibilite a prática deliberada de programação aos
+                    participantes,
+                    serão oferecidas Oficinas de Coding Dojo. Nessas oficinas, serão abordadas metodologias de programação e
+                    boas práticas de
+                    codificação por meio da análise e soluções de desafios. Além disso, serão exercitados os valores do
+                    Coding Dojo, tais como,
+                    cooperação, participação, coragem, respeito e simplicidado.
+                </p>
+                <form>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <input type="submit" placeholder="Enviar ">
+                </form>
+            </div>
+            
 
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-        crossorigin="anonymous"></script>
+    <footer>
+        <div class="containerFooter">
+            <h4>Desenvolvido por Vinicius e Ramona</h4>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
