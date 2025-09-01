@@ -16,7 +16,6 @@ body {
 }
 
 /* Header */
-
 header {
     display: flex;
     flex-direction: row;
@@ -48,10 +47,7 @@ li {
     transition: 0.3s all;
 }
 
-
-
 /* Body */
-
 main {
     display: flex;
     flex-direction: column;
@@ -71,7 +67,6 @@ main {
     display: block;
     margin-top: -50px;
 }
-
 
 .tituloPrincipal {
     display: flex;
@@ -96,9 +91,7 @@ main {
     line-height: 10px;
 }
 
-
 /* Container Informacoes */
-
 #carouselExampleIndicators .carousel-item img {
     width: 100%;
     height: 100%;
@@ -123,11 +116,9 @@ main {
 }
 
 /* Container contato */
-
 .textoContato{
     display: flex;
     flex-direction: column;
-
 }
 
 .tituloContato{
@@ -147,10 +138,6 @@ p{
     max-width: 500px;
 }
 
-
-
-
-
 hr {
     background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
@@ -159,7 +146,6 @@ hr {
 }
 
 /* footer */
-
 .containerFooter{
     width: 100%;
     height: 60px;
