@@ -16,7 +16,15 @@ body {
 }
 
 /* Header */
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.containerHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
