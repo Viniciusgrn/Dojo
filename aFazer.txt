@@ -5,5 +5,8 @@ Header:
 Body:
     Fazer Eventos
         Timeline -> com data, falar o que foi feito, link para dojopuzzles e github
-    Fazer carrossel
+    Fazer carrossel - feito
     Fazer calendario
+
+Tudo:
+    deixar tudo responsivo
