@@ -6,7 +6,7 @@ Body:
     Fazer Eventos
         Timeline -> com data, falar o que foi feito, link para dojopuzzles e github
     Fazer carrossel - feito
-    Fazer calendario
+    Fazer calendario - feito
 
 Tudo:
     deixar tudo responsivo

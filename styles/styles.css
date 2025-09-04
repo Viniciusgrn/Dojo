@@ -112,7 +112,6 @@ main {
     }
 }
 
-
 /* container titulo */
 .containerTitulo{
     width: 100%;
@@ -308,5 +307,10 @@ body {
     }
 }
 
-
+#calendar {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color:#fafaef;
+    width:700px;
+}
 
