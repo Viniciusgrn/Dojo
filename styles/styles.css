@@ -22,9 +22,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000; /*Fixando o header*/
 }
 
-.containerHeader {
+.containerHeader, .containerHeaderDemais {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +35,7 @@ header {
 }
 
 .logoHeader{
-    font-weight: 95;
+    font-weight: 100;
     font-family: 'Orgon Plan';
 }
 
@@ -42,6 +43,7 @@ header {
 .logoHeader {
     color: aliceblue;
     text-decoration: none;
+    align-items: baseline;
 }
 
 li {
@@ -68,10 +70,10 @@ main {
 
 /* Container visível do carrossel */
 .carousel {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 20px 0px;
     position: relative;
 }
 
@@ -91,7 +93,7 @@ main {
 /* Card individual */
 .card {
     flex: 0 0 auto;
-    width: 200px; /* Ou ajuste conforme o número de cards visíveis */
+    width: 400px; /* Ou ajuste conforme o número de cards visíveis */
 }
 
 .card img {
@@ -108,7 +110,7 @@ main {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
@@ -127,7 +129,7 @@ main {
 .tituloPrincipal {
     display: flex;
     justify-content: center;
-    font-size: 90px;
+    font-size: 100px;
     font-weight: 200;
     color: #fdf6f6 !important;
     font-family: 'Orgon Plan';
@@ -169,9 +171,27 @@ main {
     flex-direction: column;
     margin-right: 50px;
     padding: 0 20px;
+
+}
+
+.paragrafoInformacoes{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    font-size: 15px;
+
 }
 
 /* Container contato */
+
+.containerContato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
 .textoContato{
     display: flex;
     flex-direction: column;
@@ -310,7 +330,6 @@ body {
 #calendar {
     max-width: 800px;
     margin: 40px auto;
-    background-color:#fafaef;
-    width:700px;
+    background-color:#bae093;
+    width:600px;
 }
-
