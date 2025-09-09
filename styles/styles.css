@@ -13,6 +13,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
 }
 
 /* Header */
@@ -22,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /*Fixando o header*/
+    z-index: 1000;
 }
 
 .containerHeader, .containerHeaderDemais {
@@ -68,16 +70,15 @@ main {
 
 /* Carrossel */
 
-/* Container visível do carrossel */
 .carousel {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
     padding: 20px 0px;
     position: relative;
+    width: 100%;
 }
 
-/* Faixa rolando com os cards */
 .carousel-track {
     display: flex;
     gap: 20px;
@@ -85,15 +86,14 @@ main {
     will-change: transform;
 }
 
-/* Pausar animação ao passar o mouse */
+
 .carousel:hover .carousel-track {
     animation-play-state: paused;
 }
 
-/* Card individual */
 .card {
     flex: 0 0 auto;
-    width: 400px; /* Ou ajuste conforme o número de cards visíveis */
+    width: 400px; 
 }
 
 .card img {
@@ -116,8 +116,8 @@ main {
 
 /* container titulo */
 .containerTitulo{
+
     width: 100%;
-    padding: 100px 50px;
     background-image: url("../img/bit6.jpg"); 
     background-size: cover;      
     background-position: center; 
@@ -130,15 +130,16 @@ main {
     display: flex;
     justify-content: center;
     font-size: 100px;
-    font-weight: 200;
+    font-weight: 700;
     color: #fdf6f6 !important;
     font-family: 'Orgon Plan';
-    -webkit-text-stroke: 3px black !important;
-
+    -webkit-text-stroke: 0.5px black !important;
+    margin-bottom: -10px;
+    padding-top: 50px;
 }
 
 .subtituloPrincipal {
-    font-size: 50px;
+    font-size: 70px;
     color: aliceblue !important;
     display: flex;
     justify-content: center;
@@ -234,11 +235,28 @@ hr {
 }
 
 /*time line*/
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f9;
-  margin: 0;
-  padding: 0;
+
+
+.eventosTitulo{
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: blanchedalmond;
+}
+
+.containerEventos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+    width: 100%;
+    background-color: #242424;
+    box-shadow: 30px 40px 20px rgba(0, 0, 0, 0.2),
+    30px -50px 20px -20px rgba(0, 0, 0, 0.2);
 }
 
 .timeline {
@@ -259,7 +277,7 @@ body {
   left: 0;
   height: 6px;
   width: 100%;
-  background-color: #000000;
+  background-color: #b1a9a9;
   z-index: 0;
 }
 
@@ -288,10 +306,10 @@ body {
 /* Conteúdo */
 .content {
   margin-top: 50px;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 2;
 }
@@ -327,9 +345,18 @@ body {
     }
 }
 
+#calendario{
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
 #calendar {
     max-width: 800px;
     margin: 40px auto;
-    background-color:#bae093;
+    background-color:#fdf6f6;
     width:600px;
 }
